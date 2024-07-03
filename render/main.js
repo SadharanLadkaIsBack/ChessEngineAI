@@ -49,7 +49,7 @@ function initGameRender(data){
 
             // render black bishop
             if(square.id == "c8" || square.id == "f8"){
-                square.piece = piece.blackKnight(square.id);
+                square.piece = piece.blackBishop(square.id);
             }
 
             // render black queen
@@ -79,7 +79,7 @@ function initGameRender(data){
 
             // render white bishop
             if(square.id == "c1" || square.id == "f1"){
-                square.piece = piece.whiteKnight(square.id);
+                square.piece = piece.whiteBishop(square.id);
             }
 
             // render white queen
