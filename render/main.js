@@ -67,6 +67,31 @@ function initGameRender(data){
                 square.piece = piece.whitePawn(square.id);
             }
 
+            // render white rook
+            if(square.id == "h1" || square.id == "a1"){
+                square.piece = piece.whiteRook(square.id);
+            }
+
+            // render white knight
+            if(square.id == "b1" || square.id == "g1"){
+                square.piece = piece.whiteKnight(square.id);
+            }
+
+            // render white bishop
+            if(square.id == "c1" || square.id == "f1"){
+                square.piece = piece.whiteKnight(square.id);
+            }
+
+            // render white queen
+            if(square.id == "d1"){
+                square.piece = piece.whiteQueen(square.id);
+            }
+
+            // render white king
+            if(square.id == "e1"){
+                square.piece = piece.whiteKing(square.id);
+            }
+
             rowEl.appendChild(squareDiv);
         });
         rowEl.classList.add("squareRow");
