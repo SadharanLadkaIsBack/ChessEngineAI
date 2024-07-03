@@ -19,13 +19,19 @@ function SquareRaw(rowId) {
     if (rowId % 2 == 0) {
         abcd.forEach((element, index) => {
             if(index % 2 == 0){
-                squareRow.push(Square("white", "e5", null))
+                squareRow.push(Square("white", element + rowId, null))
             }else{
-                squareRow.push(Square("black", "e5", null))
+                squareRow.push(Square("black", element + rowId, null))
             }
         });
     } else {
-        squareRow.push(Square("black", "e5", null))
+        abcd.forEach((element, index) => {
+            if(index % 2 == 0){
+                squareRow.push(Square("black", element + rowId, null))
+            }else{
+                squareRow.push(Square("white", element + rowId, null))
+            }
+        });
     }
     return squareRow;
 }
