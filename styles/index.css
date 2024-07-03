@@ -5,6 +5,8 @@ body {
 #root {
     display: flex;
     flex-direction: column;
+    width: fit-content;
+    margin: auto;
 }
 
 .squareRow {
@@ -12,8 +14,8 @@ body {
 }
 
 .square {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
 }
 
 .white {
@@ -22,4 +24,8 @@ body {
 
 .black {
     background-color: #6C3A27;
+}
+
+.piece {
+    width: 100%;
 }
