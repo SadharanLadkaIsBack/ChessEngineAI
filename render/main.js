@@ -47,6 +47,21 @@ function initGameRender(data){
                 square.piece = piece.blackKnight(square.id);
             }
 
+            // render black bishop
+            if(square.id == "c8" || square.id == "f8"){
+                square.piece = piece.blackKnight(square.id);
+            }
+
+            // render black queen
+            if(square.id == "d8"){
+                square.piece = piece.blackQueen(square.id);
+            }
+
+            // render black king
+            if(square.id == "e8"){
+                square.piece = piece.blackKing(square.id);
+            }
+
             //render white pawn
             if(square.id[1]==2){
                 square.piece = piece.whitePawn(square.id);
