@@ -1,5 +1,4 @@
-import { blackPawn } from "../data/pieces.js";
-import { whitePawn } from "../data/pieces.js";
+import * as piece from "../data/pieces.js";
 
 const root_div = document.getElementById("root")
 
@@ -35,12 +34,17 @@ function initGameRender(data){
 
             // render black pawn
             if(square.id[1]==7){
-                square.piece = blackPawn(square.id);
+                square.piece = piece.blackPawn(square.id);
+            }
+
+            // render black rook
+            if(square.id == "h8" || square.id == "a8"){
+                square.piece = piece.blackRook(square.id);
             }
 
             //render white pawn
             if(square.id[1]==2){
-                square.piece = whitePawn(square.id);
+                square.piece = piece.whitePawn(square.id);
             }
 
             rowEl.appendChild(squareDiv);
