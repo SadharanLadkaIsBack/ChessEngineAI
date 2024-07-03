@@ -1,6 +1,5 @@
 import * as piece from "../data/pieces.js";
-
-const root_div = document.getElementById("root")
+import { root_div } from "../helper/constants.js";
 
 // use when you want to render the pieces on board
 function pieceRender(data){
