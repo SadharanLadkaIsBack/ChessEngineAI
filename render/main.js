@@ -42,6 +42,11 @@ function initGameRender(data){
                 square.piece = piece.blackRook(square.id);
             }
 
+            // render black knight
+            if(square.id == "b8" || square.id == "g8"){
+                square.piece = piece.blackKnight(square.id);
+            }
+
             //render white pawn
             if(square.id[1]==2){
                 square.piece = piece.whitePawn(square.id);
